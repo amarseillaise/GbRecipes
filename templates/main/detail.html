@@ -1,0 +1,109 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block url %}
+    {% url 'index' %}
+{% endblock %}
+
+{% block style_link %}
+    <link rel="stylesheet" href="{% static "main/css/detail_style.css" %}">
+{% endblock %}
+
+{% block content %}
+    <section class="content">
+        <section class="content-main-section">
+
+            <section class="content-main-section">
+                <div class="content-path">
+                    <h3 class="content-path-text">Рецепты</h3>
+                    <h3 class="content-path-text">/</h3>
+                    <h3 class="content-path-text">{{ recipe.origin_country }}</h3>
+                    <h3 class="content-path-text">/</h3>
+                    <h3 class="content-path-text-last">{{ recipe.name }}</h3>
+                </div>
+            </section>
+
+            {% if recipe.image %}
+            <section class="content-welcome-image-section" id="previewImg" style="background-image: url({{ recipe.image.url }});">
+                <h2 class="content-image-recipe-title">{{ recipe.name }}</h2>
+            </section>
+            {% else %}
+            <section class="content-welcome-image-section" id="previewImg" style="background-image: url({% static "main/images/no-photo.jpg" %});">
+                <h2 class="content-image-recipe-title">{{ recipe.name }}</h2>
+            </section>
+            {% endif %}
+
+            <section class="content-forms-section">
+
+                <div class="content-forms-block">
+                    <div class="content-form-block">
+                        <h2 class="content-form-label">Название</h2>
+                        <div class="content-recipe-info-block">
+                            <h3 class="content-recipe-info">{{ recipe.name }}</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-forms-block">
+                    <div class="content-form-block">
+                        <h2 class="content-form-label">Страна происхождения</h2>
+                        <div class="content-recipe-info-block">
+                            <h3 class="content-recipe-info">{{ recipe.origin_country }}</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-forms-block">
+                    <div class="content-form-block">
+                        <h2 class="content-form-label">Время приготовления</h2>
+                        <div class="content-recipe-info-block">
+                            <h3 class="content-recipe-info">{{ recipe.cooking_time }} минут</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-forms-block">
+                    <div class="content-form-block">
+                        <h2 class="content-form-label">Описание</h2>
+                        <div class="content-recipe-info-block">
+                            <h3 class="content-recipe-info">{{ recipe.description }}</h3>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="content-forms-block">
+                    <div class="content-form-block">
+                        <h2 class="content-form-label">История рецепта</h2>
+                        <div class="content-recipe-info-block">
+                            <h3 class="content-recipe-info">{{ recipe.history }}</h3>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="content-forms-block">
+                    <div class="content-form-block">
+                        <h2 class="content-form-label">Время приготовления</h2>
+                        <div class="content-recipe-info-block">
+                            <h3 class="content-recipe-info">{{ recipe.cooking_descr }}</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-change-block">
+                    <a href="{% url 'change' id=recipe.pk %}" class="fill-div">
+                        <h3 class="content-change-button">Изменить рецепт</h3>
+                    </a>
+                </div>
+
+
+            </section>
+
+        </section>
+    </section>
+{% endblock %}

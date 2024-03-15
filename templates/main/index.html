@@ -1,0 +1,56 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block style_link %}
+    <link rel="stylesheet" href="{% static "main/css/index_style.css" %}">
+{% endblock %}
+
+{% block content %}
+    <section class="content">
+
+        <section class="content-main-section">
+
+            <div class="content-welcome-image-section">
+                <div class="content-titles-block">
+                    <div class="content-main-title-block">
+                        <h1 class="content-main-title">Самый полный сборник рецептов</h1>
+                    </div>
+                    <div class="content-main-title-block">
+                        <h3 class="content-additional-title">Просматривай. добавляй свои. Бесплатно, без смс и регистрации</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="content-filter-block">
+                <h3 class="content-filter-text">Все рецепты</h3>
+            </div>
+
+        </section>
+
+        <section class="content-tiles">
+        {% for tile in tiles %}
+
+                <div class="content-tile">
+                    <a href="{% url 'recipies' id=tile.pk%}" class="fill-div" id="tile-{{ tile.pk }}">
+                        {% if tile.image %}
+                            <img class="content-tile-image" src="{{ tile.image.url }}" alt="{% static "main/images/no-photo.jpg" %}">
+                        {% else %}
+                            <img class="content-tile-image" src="{% static "main/images/no-photo.jpg" %}" alt="{% static "main/images/no-photo.jpg" %}">
+                        {% endif %}
+                        <div class="content-tile-info">
+                            <h3 class="content-tile-title"> {{ tile.name }} </h3>
+                            <h3 class="content-tile-description"> {{ tile.origin_country }} </h3>
+                            <h3 class="content-tile-description"> {{ tile.cooking_time }} минут</h3>
+                        </div>
+                    </a>
+                </div>
+
+        {% endfor %}
+        </section>
+
+
+    </section>
+{% endblock %}

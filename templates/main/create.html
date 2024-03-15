@@ -1,0 +1,90 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block url %}
+    {% url 'index' %}
+{% endblock %}
+
+{% block style_link %}
+    <link rel="stylesheet" href="{% static "main/css/create_style.css" %}">
+{% endblock %}
+
+{% block content %}
+    <section class="content">
+        <form method="post" enctype="multipart/form-data" class="content-main-section">
+            {% csrf_token %}
+
+            {% if form.image.value %}
+                <div class="content-welcome-image-section" id="previewImg" style="background-image: url({{ MEDIA_URL }}{{form.image.value}})">
+                    <div class="content-titles-block">
+                        <div class="content-main-title-block">
+                            <h1 class="content-main-title" id="welcomeText"></h1>
+                        </div>
+                        <div class="content-image-select-block">
+                            <label class="content-image-select-label" for="upload-photo">Выберите изображение</label>
+                            {{ form.image }}
+                        </div>
+                    </div>
+                </div>
+            {% else %}
+                <div class="content-welcome-image-section" id="previewImg">
+                    <div class="content-titles-block">
+                        <div class="content-main-title-block">
+                            <h1 class="content-main-title" id="welcomeText">Здесь будет ваше изображение</h1>
+                        </div>
+                        <div class="content-image-select-block">
+                            <label class="content-image-select-label" for="upload-photo">Выберите изображение</label>
+                            {{ form.image }}
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+
+
+            <div class="content-forms-section">
+                <div class="content-forms-block">
+                    {% for fm in form %}
+                        {% if fm.name != 'image' %}
+                        <div class="content-form-block">
+                            <label class="content-form-label">{{fm.label}}</label>
+                            {{fm}}
+                        </div>
+                        {% endif %}
+                    {% endfor %}
+                    <div class="content-submit-block">
+                        <label class="content-image-select-label" for="photo-submit-button">Сохранить рецепт</label>
+                        <input type="submit" name="photo-submit" id="photo-submit-button" />
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </section>
+
+  <script>
+    function previewImage() {
+      const fileInput = document.getElementById('upload-photo');
+      const imagePreview = document.getElementById('previewImg');
+      const welcomeText = document.getElementById('welcomeText');
+
+      const file = fileInput.files[0];
+      const reader = new FileReader();
+
+      welcomeText.innerHTML = ''
+
+        reader.onload = function(event) {
+          const base64 = 'url'+ '(' + event.target.result + ')';
+          imagePreview.style.backgroundImage = base64;
+        };
+
+      if (file) {
+        reader.readAsDataURL(file);
+      }
+    }
+  </script>
+
+{% endblock %}

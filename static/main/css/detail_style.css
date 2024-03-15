@@ -1,0 +1,207 @@
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+textarea, input{
+    color: rgb(33, 26, 10);
+    font-family: Open Sans;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22.5px;
+    letter-spacing: -0.27px;
+    text-align: left;
+}
+
+#upload-photo, #photo-submit-button {
+   opacity: 0;
+   position: absolute;
+   z-index: -1;
+}
+
+.content{
+    /* content */
+    position: static;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 160px 20px 160px;
+
+
+    /* Inside Auto Layout */
+    flex: none;
+    flex-grow: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-path{
+    position: static;
+    width: 960px;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 5px;
+}
+
+.content-path-text{
+    color: rgb(161, 125, 28);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.content-path-text-last{
+    color: rgb(33, 26, 10);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.content-main-section{
+    /* Depth 3, Frame 0 */
+    position: static;
+    width: 960px;
+    height: auto;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+
+    /* Inside Auto Layout */
+    flex: none;
+    flex-grow: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-welcome-image-section{
+    position: static;
+    width: 960px;
+    height: 512px;
+    /* Inside Auto Layout */
+    flex: none;
+    flex-grow: 0;
+    margin: 0px 0px;
+
+    border-radius: 12px;
+    background: linear-gradient(90.00deg, rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.4) 100%);
+    background-size: 100% 100%;
+}
+
+.content-image-recipe-title{
+    height: 60px;
+    color: rgb(255, 255, 255);
+    font-family: Open Sans;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: -1.58px;
+    margin-top: 380px;
+    margin-left: 75px;
+    text-shadow: 2px 1px 1px black;
+
+    font-family: Open Sans;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: -1.58px;
+    text-align: left;
+}
+
+.content-forms-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.content-forms-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+}
+
+.content-form-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 960px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.content-form-label{
+    color: rgb(33, 26, 10);
+    font-family: Open Sans;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 22.5px;
+    letter-spacing: -0.27px;
+    text-align: left;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.content-recipe-info-block{
+    /* Depth 4, Frame 5 */
+    position: static;
+    width: 960px;
+    /* Inside Auto Layout */
+    flex: none;
+    margin: 0px 0px;
+}
+
+.content-recipe-info{
+    color: rgb(33, 26, 10);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.content-change-block{
+    width: 180px;
+    height: 48px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+    border-radius: 12px;
+    background: rgb(244, 192, 137);
+}
+
+.content-change-button{
+    padding-top: 13px;
+    color: rgb(33, 26, 10);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.24px;
+    text-align: center;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+        <title>
+        {% block title %}
+            {{ title }}
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="{% static "main/css/base_style.css" %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    {% block style_link %}
+    {% endblock %}
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo0">
+            <div class="header-logo1">
+                <div class="header-logo2">
+                    <img class="header-logo-img" src="{% static "main/images/logo.svg" %}" alt="0">
+                </div>
+                <div class="header-logo21">
+                    <h3 class="header-logo-text">Книга рецептов</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-space"></div>
+
+        <form action="{% block url %}{% url 'create' %}{% endblock %}">
+            <button class="header-add-button">{{ main_button_title }}</button>
+        </form>
+
+    </header>
+
+{% block content %}
+{% endblock %}
+
+    <footer class="footer">
+        <div class="footer-logos">
+            <a class="footer-logo" href="https://vk.ru/amarseillaise"><img src="{% static "main/images/logo_p.svg" %}" alt="?"></a>
+            <a class="footer-logo" href="https://vk.ru/amarseillaise"><img src="{% static "main/images/logo_fb.svg" %}" alt="?"></a>
+            <a class="footer-logo" href="https://vk.ru/amarseillaise"><img src="{% static "main/images/logo_x.svg" %}" alt="?"></a>
+            <a class="footer-logo" href="https://vk.ru/amarseillaise"><img src="{% static "main/images/logo_inst.svg" %}" alt="?"></a>
+        </div>
+
+        <div class="footer-rights">
+            <h3 class="footer-rights-text">@2024 Никакие права не защищены. Проект для итоговой аттестации</h3>
+        </div>
+    </footer>
+</body>
+</html>

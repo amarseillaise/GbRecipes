@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+}
+
+.header{
+    /* header */
+    position: static;
+    width: 1280px;
+    height: 65px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 12px 40px 12px 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(230, 232, 235);
+}
+
+.header-logo0{
+    /* Depth 3, Frame 0 */
+    position: static;
+    width: 256.44px;
+    height: 22.5px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+
+    /* Inside Auto Layout */
+    flex: none;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+.header-logo1{
+    /* Depth 4, Frame 0 */
+    position: static;
+    width: 256.44px;
+    height: 22.5px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+
+    /* Inside Auto Layout */
+    flex: none;
+    flex-grow: 0;
+    margin: 0px 32px;
+}
+
+.header-logo2{
+    /* Depth 5, Frame 0 */
+    position: static;
+    width: 16px;
+    height: 16px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+
+    /* Inside Auto Layout */
+    flex: none;
+    flex-grow: 0;
+    margin: 0px 16px;
+}
+
+.header-logo-img{
+    /* Vector - 0 */
+    position: static;
+    width: 16px;
+    height: 16px;
+    /* Inside Auto Layout */
+    flex: none;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+.header-logo-text{
+    /* San Francisco Coffee Co. */
+    position: static;
+    width: 147px;
+    height: 22px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+
+
+    /* Inside Auto Layout */
+    flex: none;
+    flex-grow: 0;
+    margin: 0px 0px;
+
+    color: rgb(33, 26, 10);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22.5px;
+    letter-spacing: -0.27px;
+    text-align: left;
+}
+
+.header-space{
+    /* Depth 3, Frame 1 */
+    position: static;
+    width: 776px;
+    height: 40px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0px;
+
+    /* Inside Auto Layout */
+    flex: none;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+.header-add-button{
+    /* Depth 9, Frame 1 */
+    position: static;
+    width: 178px;
+    height: 48px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+    border: None;
+
+    /* Inside Auto Layout */
+    flex: none;
+    flex-grow: 0;
+    margin: 0px 0px;
+
+    border-radius: 12px;
+    background: rgb(245, 240, 219);
+
+    color: rgb(33, 26, 10);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.24px;
+    text-align: center;
+}
+
+.footer{
+/* footer */
+    position: static;
+    width: 1280px;
+    height: 193px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+
+    /* Inside Auto Layout */
+    flex: none;
+    flex-grow: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.footer-logos{
+    /* Depth 5, Frame 1 */
+    position: static;
+    width: 280px;
+    height: 24px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px 0px 50px;
+
+
+    /* Inside Auto Layout */
+    flex: none;
+    flex-grow: 0;
+    margin: 24px 0px;
+    }
+
+    .footer-logo{
+    /* Vector - 0 */
+    position: static;
+    width: 24px;
+    height: 24px;
+    /* Inside Auto Layout */
+    flex: none;
+    flex-grow: 0;
+    margin: 0px 28px;
+}
+
+.footer-rights{
+    position: static;
+    width: 551px;
+    height: 24px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+
+    /* Inside Auto Layout */
+    flex: none;
+    flex-grow: 0;
+}
+
+.footer-rights-text{
+    position: static;
+    width: 551px;
+    height: 24px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+
+
+    /* Inside Auto Layout */
+    flex: none;
+    flex-grow: 0;
+    margin: 0px 10px;
+
+    color: rgb(161, 125, 28);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+}

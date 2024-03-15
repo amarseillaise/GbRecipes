@@ -1,0 +1,319 @@
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+.content{
+    /* content */
+    position: static;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 160px 20px 160px;
+
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-main-section{
+    /* Depth 3, Frame 0 */
+    position: static;
+    width: 960px;
+    height: auto;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-welcome-image-section{
+    /* Depth 6, Frame 0 */
+    position: static;
+    width: 960px;
+    height: 480px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    text-shadow: 2px 1px 1px black;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+
+    border-radius: 12px;
+    background: linear-gradient(90.00deg, rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.4) 100%);
+    background-image: url(../images/welcome_image.jpg);
+    background-size: 100% 100%;
+}
+
+.content-titles-block{
+    position: static;
+    width: 896px;
+    height: 116px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-main-title-block{
+    /* Depth 10, Frame 0 */
+    position: static;
+    width: 896px;
+    height: 60px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 8px 0px;
+}
+
+.content-main-title{
+    /* Welcome to San Francisco Coffee Co. */
+    position: static;
+    width: 896px;
+    height: 60px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+    margin: 0px 0px;
+
+    color: rgb(255, 255, 255);
+    font-family: Open Sans;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: -1.58px;
+    text-align: center;
+}
+
+.content-additional-title{
+    position: static;
+    width: 896px;
+    height: 48px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+    margin: 0px 0px;
+
+    color: rgb(255, 255, 255);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.content-filter-block{
+/* Depth 4, Frame 3 */
+    position: static;
+    width: 960px;
+    height: 59.5px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 16px 12px 16px;
+
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+.content-filter-text{
+    /* Best Selling Coffee Beans */
+    position: static;
+    width: 142px;
+    height: 27px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 16px 12px 16px;
+
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+
+    color: rgb(33, 26, 10);
+    font-family: Open Sans;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27.5px;
+    letter-spacing: -0.33px;
+    text-align: center;
+}
+
+.content-tiles{
+    position: static;
+    width: 960px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px 0px 12px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.content-tile{
+    position: static;
+    width: 301.33px;
+    height: 391.34px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+.content-tile-image{
+    /* Depth 7, Frame 0 */
+    position: static;
+    width: 301.33px;
+    height: 301.33px;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 12px 0px;
+    border-radius: 12px;
+}
+
+.content-tile-info{
+    /* Depth 6, Frame 1 */
+    position: static;
+    width: 301.33px;
+    height: 78px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px 0px 12px 0px;
+}
+
+.content-tile-title{
+    /* Caramel Macchiato */
+    position: static;
+    width: 301.33px;
+    height: 24px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    margin: 0px 0px;
+
+    color: rgb(33, 26, 10);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.content-tile-description{
+    /* Caramel Macchiato, 12oz */
+    position: static;
+    width: 301.33px;
+    height: 21px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+    margin: 0px 0px;
+
+    color: rgb(161, 125, 28);
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
